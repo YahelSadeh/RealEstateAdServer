@@ -11,15 +11,13 @@ public class Ad implements java.io.Serializable{
     int numOfRooms;
     int numOfFloor;
     int squareOfMeter;
-    Long Price;
-    int year;
-    int month;
-    int day;
+    int Price;
+    String date;
     String description;
 
     public Ad(long id, String user, String city, String street,
               int numOfHome, int numOfRooms, int numOfFloor,
-              int squareOfMeter, Long price, int year, int month, int day, String description) {
+              int squareOfMeter, int price, String date, String description) {
         this.id = id;
         this.user = user;
         this.city = city;
@@ -28,14 +26,12 @@ public class Ad implements java.io.Serializable{
         this.numOfRooms = numOfRooms;
         this.numOfFloor = numOfFloor;
         this.squareOfMeter = squareOfMeter;
-        Price = price;
-        this.year = year;
-        this.month = month;
-        this.day = day;
+        this.Price = price;
+        this.date = date;
         this.description = description;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
     public String getUser() {
@@ -80,29 +76,23 @@ public class Ad implements java.io.Serializable{
     public void setSquareOfMeter(int squareOfMeter) {
         this.squareOfMeter = squareOfMeter;
     }
-    public Long getPrice() {
+    public int getPrice() {
         return Price;
     }
-    public void setPrice(Long price) {
+    public void setPrice(int price) {
         Price = price;
     }
-    public int getYear() {
-        return year;
+    public String getDate() {
+        return date;
     }
-    public void setYear(int year) {
-        this.year = year;
+    public void setDate(String date) {
+        this.date = date;
     }
-    public int getMonth() {
-        return month;
+    public String getDescription() {
+        return description;
     }
-    public void setMonth(int month) {
-        this.month = month;
-    }
-    public int getDay() {
-        return day;
-    }
-    public void setDay(int day) {
-        this.day = day;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
 }

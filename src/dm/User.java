@@ -7,7 +7,6 @@ import java.util.PrimitiveIterator;
 public class User implements Serializable {
     private Long id;
     String userName;
-
     String password;
     Long phoneNum;
     ArrayList<Ad> ads;
